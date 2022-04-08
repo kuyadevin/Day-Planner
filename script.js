@@ -35,7 +35,6 @@ var text= document.getElementsByName("textarea");
 var time= moment().format("H");
 
 var currentHour=parseInt(time);
-console.log(currentHour)
 
 var nine= moment(nineAm,"hA").format("H");
 var nineH=parseInt(nine);
@@ -68,26 +67,110 @@ var fiveH=parseInt(five);
 
 
 
-function color9(){
+{function color9(){
     if (nineH<time){
-        $("textarea").addClass("past");
+        $(".nC").addClass("past");
     }else if (nineH>time){
-        $("textarea").addClass("future");
+        $(".nC").addClass("future");
     } else if (nineH=time){
-        $("textarea").addClass("present");
+        $(".nC").addClass("present");
     };
 } 
 
 color9();
-
+}
 function color10(){
     if (tenH<time){
-        $("textarea").addClass("past")
+        $(".tC").addClass("past")
     }else if (tenH>time){
-        $("textarea").addClass("future")
+        $(".tC").addClass("future")
     } else if (tenH=time){
-        $("textarea").addClass("present")
+        $(".tC").addClass("present")
     }
 } 
 
-color10()
+color10();
+
+function color11(){
+    if (elevenH<time){
+        $(".ewC").addClass("past")
+    }else if (elevenH>time){
+        $(".ewC").addClass("future")
+    } else if (elevenH=time){
+        $(".ewC").addClass("present")
+    }
+} 
+
+color11();
+
+function color12(){
+    if (twelveH<time){
+        $(".twC").addClass("past")
+    }else if (twelveH>time){
+        $(".twC").addClass("future")
+    } else if (twelveH=time){
+        $(".twC").addClass("present")
+    }
+} 
+
+color12();
+
+function color1(){
+    if (oneH<time){
+        $(".oC").addClass("past")
+    }else if (oneH>time){
+        $(".oC").addClass("future")
+    } else if (oneH=time){
+        $(".oC").addClass("present")
+    }
+} 
+
+color1();
+
+function color2(){
+    if (twoH<time){
+        $(".twoC").addClass("past")
+    }else if (twoH>time){
+        $(".twoC").addClass("future")
+    } else if (twoH=time){
+        $(".twoC").addClass("present")
+    }
+} 
+
+color2();
+
+function color3(){
+    if (threeH<time){
+        $(".thC").addClass("past")
+    }else if (threeH>time){
+        $(".thC").addClass("future")
+    } else if (threeH=time){
+        $(".thC").addClass("present")
+    }
+} 
+
+color3();
+
+function color4(){
+    if (fourH<time){
+        $(".fC").addClass("past")
+    }else if (fourH>time){
+        $(".fC").addClass("future")
+    } else if (fourH=time){
+        $(".fC").addClass("present")
+    }
+} 
+
+color4();
+
+function color5(){
+    if (fiveH<time){
+        $(".fiC").addClass("past")
+    }else if (fiveH>time){
+        $(".fiC").addClass("future")
+    } else if (fiveH=time){
+        $(".fiC").addClass("present")
+    }
+} 
+
+color5();
