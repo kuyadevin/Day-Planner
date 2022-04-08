@@ -175,6 +175,6 @@ function color5(){
 
 color5();
 
-$(".saveBtn").addEventListener("click", function(event){
-    event.preventDefault();
-})
+
+var input=document.getElementsByTagName("textarea").value;
+window.localStorage.setItem("events", input);
